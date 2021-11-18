@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.HomeActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_quarter">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_quarter"
+            android:layout_weight="1"
+            android:hint="@string/hint_title"
+            android:maxLines="1" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_quarter"
+            android:layout_weight="1"
+            android:hint="@string/hint_desc"
+            android:maxLines="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bAdd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:text="@string/text_add"
+            android:textColor="@color/white" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llAdd"
+        android:clipToPadding="false"
+        android:padding="@dimen/margin_quarter"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Searchable-App-Prinkal</string>
+    <string name="search_hint">Searchable-App-Prinkal</string>
+    <string name="search_settings_help">Searchable-App-Prinkal</string>
+    <string name="text_serach_dialog_example">ANDROID SEARCH DIALOG EXAMPLE</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_desc">Description</string>
+    <string name="text_add">Add</string>
+    <string name="invalid_msg">please fill valid title and description</string>
+</resources>
